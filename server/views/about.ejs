@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include partials/header.ejs %>
+    <body>
+        <%- include partials/main_nav.ejs %>
+
+        <!-- creating three boxes and center texts inside them-->
+        <div class="container-fluid bg-3 text-center">    
+            
+            <div class="row">
+              <div class="col-sm-4">
+                <!-- include image-->
+                <img src="https://ejoproject.files.wordpress.com/2021/02/e-1.jpg?w=141" width="80" height="250" alt="">
+                <h5>It's me!</h5>
+              </div>
+
+              <div class="col-sm-4"> 
+                <h3> Who Am I? </h3>
+                <p>My name is Eunju Jo. I am currently in Software Engineering Program at Centennial College. I have completed
+                    my bachelor's degree in Statistics in South Korea. </p>
+                <p>I love music. I have been playing the piano since I was four and it's my 
+                    favorite thing to do in my spare time.
+                </p>
+                    
+                
+              </div>
+              
+              <div class="col-sm-4"> 
+                 <h5>Here's my resume</h5> 
+                 <!-- link to pdf file-->
+                 <p>Open a PDF <a href="https://ejoproject.files.wordpress.com/2021/02/ass1.pdf">Here</a>.</p>
+
+            
+              </div>
+            </div>
+          </div>
+          <%- include partials/footer.ejs %>
+          <%- include partials/bottom_nav.ejs %>
+    </body>
+</html>

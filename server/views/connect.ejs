@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% include ./partials/header %>
+    <body>
+        <% include ./partials/main_nav %>
+        <div class="container-fluid bg-3 text-center">    
+            
+            <div class="row">
+              <div class="col-sm-4">
+                <h3> Let's connect </h3> 
+                <p>             </p>
+                <p>ejo5@my.centennialcollege.ca</p>
+                <p>             </p>
+                <img src="https://static.thenounproject.com/png/3261168-200.png" width="50" height="50" alt="">
+              </div>
+
+              <div class="col-sm-4"> 
+                <h3>Send me a message</h3>
+                <p>         </p>
+                <p>         </p>
+                <p>         </p>
+
+              <!-- creating contact form-->  
+              <form method="post" action="/contact" novalidate>
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea class="input" id="message" name="message" rows="4" autofocus></textarea>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                 <input class="input" id="email" name="email" type="email" value="" />
+                </div>
+                <div class="form-actions">
+                  <button class="btn" type="submit">Send</button>
+                </div>
+              </form>
+              </div>
+
+              
+            </div>
+          </div>
+        <% include ./partials/footer %>
+        <% include ./partials/bottom_nav %>
+    </body>
+</html>
+
+<!-- Source https://webdesigningworld.com/node-js/sending-email-with-node-js/ by kishan kumar -->
